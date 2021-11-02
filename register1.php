@@ -3,42 +3,78 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Register/ Login</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
+<head>
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="register_design.css">
+</head>
     <body>
-    <div class="bg">
-          <form action = "register1.php" method="post" style="font-size: 40px; font-family:'Times New Roman', Times, serif; margin-top: 100px; color:#FFFFFF;"  >LOGIN!!
-            <div class = "form-group">
-              <label style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Username</b></label><br>
-              <input name = "username" type="text" class="form-control" placeholder="Enter Username" required style="font-size: 20px;" >
-            </div>
-            <div class = "form-group">
-              <label style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Password</b></label><br>
-              <input name = "password" type="password" class="form-control" placeholder="Enter Password" required style="font-size: 20px;" ><br>
-              <labe style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Confirm Password</b></label><br>
-              <input name = "cpassword" type="password" class="form-control" placeholder="Enter Password" required style="font-size: 20px;">
-            </div>
-            <input name = "submit_btn" class="btn btn-default" style="border-radius:4px; font-size: 18px; font-family: Arial;" type="submit" value="Register">
-            <button class="btn btn-default" type="button" style="border-radius:4px; font-size: 18px; font-family: Arial;" class="cancelbtn" >Cancel</button>
-            <br>
-          </form><br><br>
-          <?php
+        <header style="font-family: 'Times New Roman', Times, serif;">
+            <div class="topnav" style="list-style: none;" id="navbarNavDropdown">
+                      
+                        <li>	
+                          <a class="active" href="home1.php" >Home </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Templates
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+                            <a class="dropdown-item" href="#">CSE/ISE</a>
+                            <a class="dropdown-item" href="#">ECE/EEE</a>
+                            <a class="dropdown-item" href="#">MECH / CIVIL</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Aboutus">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                          </li>
+                        <li class="nav-item" style="float: right;">
+                            <a class="nav-link" href="Login1.php" >Sign-In</a>
+                          </li>
+                          <li class="nav-item" style="float: right;border-right:1px solid #bbb;">
+                            <a class="nav-link" href="register1.php" >Sign-Up</a>
+                          </li>
+                     
+                    </div>
+            </header>
+        <div class="container" style="justify-content: center;">
+            <h2 style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif; font-size: 8vh;">Register here!</h2>
+          <form action = "register1.php" method="post">
+            <div class="form-group">
+              <label style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif;">Name:</label><br>
+              <input class="form-group" placeholder="Enter name" name="name" style="width: 200px; border-radius: 8px;"><br>
+              <label style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif;">Email:</label><br>
+              <input type="email" class="form-group"  placeholder="Enter email" name="email" style="width: 200px; border-radius: 8px;"><br>
+              <label style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif;">Password:</label><br>
+              <input type="password" class="form-group"  placeholder="Enter password" name="password" style="width: 200px; border-radius: 8px;"><br>
+              <label style="font-family: 'Times New Roman', Times, serif;">Confirm password:</label><br>
+              <input type="password" class="form-group" placeholder="Confirm password" name="cpassword" style="width: 200px; border-radius: 8px;"><br>
+            </div><br>
+            <input name="submit_btn" class="btn btn-default" style="border-radius:4px; font-size: 18px; font-family: 'Times New Roman', Times, serif;float:right;" type="submit" value="Create Acoount"><br><br>
+            <button class="btn btn-default" type="button" style="border-radius:4px; font-size: 18px; font-family: 'Times New Roman', Times, serif;float:right;" ><a href="login1.php">Login</a></button><br><br>
+          </form>
+         <?php
             if(isset($_POST['submit_btn']))
             {
                 //echo '<script type="text/javascript"> alert("Signup clicked") </script>';
-                $username = $_POST['username'];
+                $name = $_POST['name'];
+                $email = $_POST['email'];
                 $password = $_POST['password'];
                 $cpassword = $_POST['cpassword'];
+                
 
                 if($password==$cpassword)
                 {
-                    $query = "select * from userinfo WHERE username='$username'";
+                    $query = "select * from userinfo WHERE email='$email'";
                     $query_run = mysqli_query($con,$query);
 
                     if(mysqli_num_rows($query_run)>0)
@@ -46,11 +82,11 @@
                         echo '<script type="text/javascript">alert("User exists try other name")</script>';
                     }
                     else{
-                        $query = "insert into userinfo values('$username','$password')";
+                        $query = "insert into userinfo values('$name','$email','$password')";
                         $query_run = mysqli_query($con,$query);
                         if($query_run)
                         {
-                            echo '<script type="text/javascript"> alert("User registered..Go and login")</script>';
+                          echo '<script type="text/javascript"> alert("User registered..Go and login")</script>';
 
                         }
                         else

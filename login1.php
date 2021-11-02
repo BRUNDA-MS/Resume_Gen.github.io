@@ -1,4 +1,29 @@
+<?php
+ session_start();
+ require 'dbconfig/config.php'
+?>
 <!DOCTYPE html>
+<?php
+            if(isset($_POST['login']))
+            {
+              $email= $_POST['email'];
+              $password = $_POST['password'];
+              $query = "select * from userinfo WHERE email='$email' AND password= '$password'";
+
+              $query_run = mysqli_query($con,$query);
+              if(mysqli_num_rows($query_run)>0)
+              {
+                
+                $_SESSION['email']=$email;
+                
+                header('location:logged.php');
+              }
+              else
+              {
+                echo '<script type="text/javascript"> alert("Invalid Credentials")</script>';
+              }
+            }
+          ?>
 <html>
 <head>
   <title>Login</title>
@@ -47,13 +72,13 @@
             </header>
         <!--<p1 style="font-size: 75px; font-family: Helvetica; color:#FFFFFF;" {text-align: center;}><b>CST Resume maker</b></p1>-->
         <div class="bg">
-          <form action = "register1.php" method="post" style="font-size: 40px; font-family:'Times New Roman', Times, serif; margin-top: 100px; color:#FFFFFF;"  >LOGIN!!
+          <form action = "login1.php" method="post" style="font-size: 40px; font-family:'Times New Roman', Times, serif; margin-top: 100px; color:#FFFFFF;"  >LOGIN!!
             <div class = "form-group">
-              <label for="uname" style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Username</b></label><br>
-              <input type="text" name="username" class="form-control" placeholder="Enter Username" required style="font-size: 20px;">
+              <label style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>E-mail</b></label><br>
+              <input type="text" name="email" class="form-control" placeholder="Enter e-mail" required style="font-size: 20px;">
             </div>
             <div class = "form-group">
-              <label for="psw" style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Password</b></label><br>
+              <label style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:#000000;"><b>Password</b></label><br>
               <input type="password" name= "password" class="form-control" placeholder="Enter Password"  required style="font-size: 20px;">
             </div>
             <div class="checkbox">
@@ -61,12 +86,16 @@
                 <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
-            <input class="btn btn-default" style="border-radius:4px; font-size: 18px; font-family: Arial;" type="submit" value="Login">
+            <input name="login" class="btn btn-default" style="border-radius:4px; font-size: 18px; font-family: Arial;" type="submit" value="Login">
             <button class="btn btn-default" type="button" style="border-radius:4px; font-size: 18px; font-family: Arial;" class="cancelbtn" >Cancel</button>
             <br>
-            <span class="psw" style="border-radius:4px; font-size: 18px; font-family: Arial;color: rgb(192, 18, 18);"><a href="#" style="color:rgb(192, 18, 18) ;">Forgot password?</a></span>
+            <span style="border-radius:4px; font-size: 18px; font-family: Arial;color: rgb(192, 18, 18);"><a href="#" style="color:rgb(192, 18, 18) ;">Forgot password?</a></span>
             <br>
           </form><br><br>
+        
+            
+          
+
           </div>
           
 </body>
