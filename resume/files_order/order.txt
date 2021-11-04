@@ -1,0 +1,29 @@
+ORDER:
+
+Home file
+home1.php
+
+Register/Login files
+register1.php
+login1.php
+
+After Login page/Dashboard-
+logged.php
+
+Templates
+templates.php
+
+About
+about.php
+
+Conatct
+contact.php
+
+Templates inside Login-
+CSE/ISE - cstemp.php
+EEE/ECE - ectemp.php
+MECH/CIVIL - metemp.php
+
+Login User Profile-
+Custom Templates- customtemp.php
+Settings - user_settings.php
