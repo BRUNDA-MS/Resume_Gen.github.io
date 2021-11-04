@@ -1,0 +1,60 @@
+
+        .bg {
+          background: linear-gradient(rgba(22, 21, 21, 0.301), rgba(0, 0, 0, 0.52)),url('https://api.time.com/wp-content/uploads/2021/02/laptop-home-office.jpg');
+          margin: 7% 5% 5% 5%;
+          background-size: cover;
+          height: 100%;
+          border: 5px solid black;
+          background-repeat: no-repeat;
+        }
+        form {
+          padding: 40px;
+          background-color: rgba(109, 112, 99, 0.404);
+          margin: auto;
+          margin-top: 100px;
+          width: 400px;
+          font-size: 18px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.651);
+          min-height: 100px;
+        }
+        a{
+          color: red;
+        }
+            p1 {text-align: center;}
+            body {text-align: center;}
+            div {text-align: center;}
+            .topnav {
+               
+                background-color: #230c33;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                
+            }
+            
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            
+            .topnav a:hover {
+                background-color: #73648A;
+                color: black;
+            }
+            
+            .topnav a.active {
+                background-color: #b27c66;
+                color: #453750;
+            }
+            body{
+              background-size: cover;
+              background: linear-gradient(50deg, rgb(59, 58, 58) 20px, rgb(204, 204, 255));
+              margin: 0%;
+              
+              scrollbar-width: thin;
+          }

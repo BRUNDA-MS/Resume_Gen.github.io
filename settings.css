@@ -1,0 +1,31 @@
+.topnav {
+    
+    background-color: #230c33;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #73648A;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #b27c66;
+    color: #453750;
+}
+body{   
+    background-image: linear-gradient(to right,rgb(132, 132, 156), rgb(204, 204, 255));
+    scrollbar-width: thin;
+}
