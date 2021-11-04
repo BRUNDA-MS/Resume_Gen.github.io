@@ -1,4 +1,7 @@
-
+<?php
+    session_start();
+    require 'dbconfig/config.php'
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +17,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
 </head>
 <body>
 
@@ -21,39 +25,50 @@
 	<div class="topnav" style="list-style: none;" id="navbarNavDropdown">
 			  
 				<li>	
-				  <a class="active" href="#Home" >Home </a>
+				  <a class="active" href="logged.php" >Home </a>
 				</li>
 				<li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Templates
 				  </a>
 				  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
-					<a class="dropdown-item" href="templates.php">CSE/ISE</a>
-					<a class="dropdown-item" href="templates.php">ECE/EEE</a>
-					<a class="dropdown-item" href="templates.php">MECH / CIVIL</a>
+					<a class="dropdown-item" href="cstemp.php">CSE/ISE</a>
+					<a class="dropdown-item" href="ectemp.php">ECE/EEE</a>
+					<a class="dropdown-item" href="metemp.php">MECH / CIVIL</a>
 				  </div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.php">About Us</a>
+				
+				  <li class="nav-item" style="float: right;">
+					<a class="nav-link" href="home1.php" >Sign-Out</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				  </li>
-				<li class="nav-item" style="float: right;">
-					<a class="nav-link" href="Login1.php" >Sign-In</a>
-				  </li>
-				  <li class="nav-item" style="float: right;border-right:1px solid #bbb;">
-					<a class="nav-link" href="register1.php" >Sign-Up</a>
-				  </li>
-			 
+				  <li class="nav-item dropdown" style="float:right;">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <?php 
+                $var= $_SESSION['email'];
+                $query = "select * from userinfo WHERE email='$var'";
+                $result = mysqli_query($con,$query);
+				
+                while($row = mysqli_fetch_array($result))
+                 {
+                     $_SESSION['name'] =$row['name'];
+                     
+                    echo $row['name'];
+                }
+        ?>
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+					<a class="dropdown-item" href="customtemp.php">Custom Templates</a>
+					<a class="dropdown-item" href="user_settings.php">Settings</a>
+				  </div>
+				</li>
 			</div>
-	</header>
-     <div class="bgimg" id="Home">
-	    <p style="margin-top: 15%;"> Getting Started ?!<br> Register to be a part of us. <br> Create your CV in less than 10 minutes!! </p>
-	    <button  id="Submit" onclick="window.location.href='register1.php'">Register</button>
-        <!-- <form><input id="Submit" type="submit" value="Register" class="button" ></form> -->
-	</div>
+	</header><br><br><br><br><br>
+	<div>
+	<iframe style="float:left;align-items:center;height:50vw;width:50vw;" src="mechtemp.html"></iframe>
+	<iframe style="margin-let:60%;margin-right:0;align-items:center;height:50vw;width:48vw;" src="mech1temp.html"></iframe>
+</div>
 	
+<br><br><br><br><br>
 	<footer id="contact">
 		<p style="font-family:'Times New Roman', Times, serif; font-size: 3vw;">Follow us on social media for more updates</p>
 		<ul>

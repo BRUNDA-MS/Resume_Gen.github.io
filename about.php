@@ -14,6 +14,57 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+    body{
+    /*background: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");*/
+    background-size: cover;
+    background: linear-gradient(50deg, rgb(59, 58, 58) 20px, rgb(204, 204, 255));
+    margin: 0%;
+    
+    scrollbar-width: thin;
+}
+.topnav {
+    
+    background-color: #230c33;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #73648A;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #b27c66;
+    color: #453750;
+}
+.social_media{
+	border: solid black 2vw;
+	font-family: 'Times New Roman', Times, serif;
+	float: left;
+    color: #f2f2f2;
+    text-align: center;
+    list-style: none;
+    font-size: 3vw;
+    
+    margin: 5vw;
+}
+.footerbg{
+	background-color: black;
+}
+    </style>
 </head>
 <body>
 
@@ -21,7 +72,7 @@
 	<div class="topnav" style="list-style: none;" id="navbarNavDropdown">
 			  
 				<li>	
-				  <a class="active" href="#Home" >Home </a>
+				  <a class="active" href="home1.php" >Home </a>
 				</li>
 				<li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,10 +85,10 @@
 				  </div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="about.php">About Us</a>
+					<a class="nav-link" href="About.php">About Us</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="contact.php">Contact</a>
 				  </li>
 				<li class="nav-item" style="float: right;">
 					<a class="nav-link" href="Login1.php" >Sign-In</a>
@@ -47,13 +98,23 @@
 				  </li>
 			 
 			</div>
-	</header>
-     <div class="bgimg" id="Home">
-	    <p style="margin-top: 15%;"> Getting Started ?!<br> Register to be a part of us. <br> Create your CV in less than 10 minutes!! </p>
-	    <button  id="Submit" onclick="window.location.href='register1.php'">Register</button>
-        <!-- <form><input id="Submit" type="submit" value="Register" class="button" ></form> -->
-	</div>
-	
+	</header><br><br><br><br>
+   <p style="color:white; text-align: center;font-family:'Times New Roman', Times, serif; font-size: 5vw;">Compsoft Technologies</p>
+   <img style="margin-left:45%;" src="new.jpg"><br><br>
+   <p style="color:white; text-align: center;font-family:'Times New Roman', Times, serif; font-size: 1vw;">Here we give you the opportunity to edit and download your resumes as PDF.<br><br><br><b style="font-size:2vw">ABOUT</b><br>
+   The race for digital transformation is on. In this globally connected on-demand world with rapid advancements in internet technologies, businesses worldwide are under constant pressure to add innovative real-time capabilities to their applications to respond to market opportunities.
+Every business worldwide is building event-driven, real-time applications - from financial services, transportation, and energy, to retail, healthcare, and Gaming companies.
+Our endeavour is to make it easy to develop innovative real-time applications and efficient to operate them in production.
+We have a proven record of building highly scalable, world-class consulting processes that offer tremendous business advantages to our clients in the form of huge cost-benefits, definitive results and consistent project deliveries across the globe.
+We prominently strive to improve your business by delivering the full range of competencies including operational performance, developing and applying business strategies to improve financial reports, defining strategic goals and measure and manage those goals along with measuring and managing them.
+<br><br><br><b style="font-size:2vw;">VISION</b><br>
+We are committed to going the extra mile to bring success to the clients consistently.<br>
+We are dedicated to delivering the right people, solutions, and services to the clients that they require to meet their technology challenges and business goals.
+<br><br><br><b style="font-size:2vw;">MISSION</b><br>
+Optimizing client satisfaction with quality services.<br>
+Delivering the most efficient and the best solution to our clients to every client leveraging leading technologies & industry best practices.
+</p>
+	<br><br><br><br><br><br>
 	<footer id="contact">
 		<p style="font-family:'Times New Roman', Times, serif; font-size: 3vw;">Follow us on social media for more updates</p>
 		<ul>

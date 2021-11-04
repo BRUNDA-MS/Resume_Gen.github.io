@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Register</title>
+        <title>GoResume</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,36 +15,37 @@
 <link rel="stylesheet" href="register_design.css">
 </head>
     <body>
-        <header style="font-family: 'Times New Roman', Times, serif;">
+    <header style="font-family: 'Times New Roman', Times, serif;">
             <div class="topnav" style="list-style: none;" id="navbarNavDropdown">
-                      
-                        <li>	
-                          <a class="active" href="home1.php" >Home </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Templates
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
-                            <a class="dropdown-item" href="#">CSE/ISE</a>
-                            <a class="dropdown-item" href="#">ECE/EEE</a>
-                            <a class="dropdown-item" href="#">MECH / CIVIL</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Aboutus">About Us</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                          </li>
-                        <li class="nav-item" style="float: right;">
-                            <a class="nav-link" href="Login1.php" >Sign-In</a>
-                          </li>
-                          <li class="nav-item" style="float: right;border-right:1px solid #bbb;">
-                            <a class="nav-link" href="register1.php" >Sign-Up</a>
-                          </li>
-                     
+                  
+                  <li>	
+                    <a class="active" href="home1.php" style=" background-color: #b27c66;
+    color: #453750;" >Home </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Templates
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+                    <a class="dropdown-item" href="templates.php">CSE/ISE</a>
+                    <a class="dropdown-item" href="templates.php">ECE/EEE</a>
+                    <a class="dropdown-item" href="templates.php">MECH / CIVIL</a>
                     </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.php">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                  <li class="nav-item" style="float: right;">
+                    <a class="nav-link" href="Login1.php" >Sign-In</a>
+                    </li>
+                    <li class="nav-item" style="float: right;border-right:1px solid #bbb;">
+                    <a class="nav-link" href="register1.php" >Sign-Up</a>
+                    </li>
+                 
+                </div>
             </header>
         <div class="container" style="justify-content: center;">
             <h2 style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif; font-size: 8vh;">Register here!</h2>

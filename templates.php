@@ -21,7 +21,7 @@
 	<div class="topnav" style="list-style: none;" id="navbarNavDropdown">
 			  
 				<li>	
-				  <a class="active" href="#Home" >Home </a>
+				  <a class="active" href="home1.php" >Home </a>
 				</li>
 				<li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,13 +48,26 @@
 			 
 			</div>
 	</header>
-     <div class="bgimg" id="Home">
-	    <p style="margin-top: 15%;"> Getting Started ?!<br> Register to be a part of us. <br> Create your CV in less than 10 minutes!! </p>
-	    <button  id="Submit" onclick="window.location.href='register1.php'">Register</button>
-        <!-- <form><input id="Submit" type="submit" value="Register" class="button" ></form> -->
-	</div>
-	
-	<footer id="contact">
+    <br><br><br><br>
+    <p style="align-text:center;font-family:'Times New Roman', Times, serif; font-size: 3vw;">Sign-Up / Sign-In to view, edit and download the Templates!!</p>
+    <br><br><br><br>
+    <p style="margin-left:0;font-family:'Times New Roman', Times, serif; font-size: 2vw;">CSE/ISE</p><br><br><br>
+    <div style="margin-left:5%;float:left;background-image: url('cs.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div>
+   <div style="margin-left:60%;background-image: url('cs1.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div><br><br><br><br><br>
+   <p style="margin-left:0;font-family:'Times New Roman', Times, serif; font-size: 2vw;">EEE/ECE</p><br><br><br>
+    <div style="margin-left:5%;float:left;background-image: url('ec1.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div>
+   <div style="margin-left:60%;background-image: url('ec2.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div><br><br><br><br><br>
+   <p style="margin-left:0;font-family:'Times New Roman', Times, serif; font-size: 2vw;">MECH/CIVIL</p><br><br><br>
+    <div style="margin-left:5%;float:left;background-image: url('mech1.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div>
+   <div style="margin-left:60%;background-image: url('mech2.jpg'); height:30vw; width:30vw;background-size:contain;background-repeat: no-repeat;">
+   </div><br><br><br><br><br>
+
+   <footer id="contact">
 		<p style="font-family:'Times New Roman', Times, serif; font-size: 3vw;">Follow us on social media for more updates</p>
 		<ul>
 			<li class="social_media"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///8gRZUyUZrn6vKKl785VZxAW6Dh5O5yg7QmSZbR1uUxUJojR5Y2U5vx8vdbcKqyutSXosVidq3a3urM0uPCyd6ps9B7i7n09vrx9Pm4wNikrs1MZKRYbqp/j7tqfbGapsiPnMIAMY0VP5JdM9iBAAAD+UlEQVR4nO3dbVOjMBSG4fDSUEISXtRatta67v7/37hF7eiMs5iKyTmHee4Zx08i13RIhACq7K1mqCu1lqp6aC4w9fqtr5z1mnrHfiztrav6D8K2M+vRXdKmay/CsiiodydKRVG+ClvrqfclUt62L8JunZ/gVNFNwt5Q70fETH8WVusbZN7TVaYaR70XUXONGiz1TkTNDqpe60D6mq/Vqg/D6UCk3gOEEEIIIYQQQgghhMjz1hr3ofz8ZZwxxlpbFFr2NUJ9tvmbzf2u2ZbjmGXZOI6/2rLc3jZ3u0P/MGz2N0dtnZPJ9NYdN7sy+7p2q+QRtc0f70N0b0vY0tLGDuE8eUJtdH8NT5zQ2vsrfbKEOj+NVwMlCQvffO2RLDRP3/EJEubD94BihPm1Q6g0Yb77LlCIcAFQhtBdPwvKEprNAqAEoX9cAhQg1KZdudB9e54QIvTdMiB/Yb5dubA4LQSyF7qrzucFCpd/hNyFi49C7kK9dCBlLzSH1QuXA3kLi/3ahWbBaaEMoVv2Nzd/4cLTJgFC+3ydpd3eNp+65bz2dMVhOB5ORzstjX6OMVC50D9otntnJK74ahsIHHKhDw/qYxjwRuyzg0UdBKzlPncWNpQeBD86GLYaKvQQfCnoxOIg9iA8Z+4ChE+Sn410IUu+Vt4s+F7IhL8VPM6ECXeSD0OVB1xIvJc7Gaow4e/VC59XL9xInvAhhFBAEELIPwgh5B+EEPIPQgj5ByGE/INQhlD/vzChndnCy1aoq2YyIUI9t4UpWqMPW+VdUkl72T9wHXtJd6sX9rQXxRMIid+fm0C4p51OEggfaVfBEwiJl/njC0fiVfD4Qup1/vhC6nX++ELqdf74QupV8PhC6lum4guPxKdP8YXUd3lHF7bUN4VFF96uXkg9HcYXPlDfMhVdSH4pLrrwhvoO4uhC8v+uEls4Ug800YUl9WQRXdis/jOkfxgjtpD+HunYwj31ZBFd2FFPFtGF1L7oQvrpMLaQ+lJifCHxytqUfyq3MwUg5n6+JD93mohupj8Bq9ynvzMbYACcbx33YswFIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPmXUEj01rNUQl2pmuZlRKmEvlZE76ZPJbSDamjeZJNK6BpF9PrBREJdZSrrSV7Wk0ho+rMw6yimnTTCossmYWsJhtMkQm/bF2FW2vSfYgphYadfMgmztkv+auz4Qm26NrsIs6yvnPUplXGF2ltX9a9bUZfNNUNd/SThi+IKq3poLlv5B3kiS8fmdy97AAAAAElFTkSuQmCC" height="50" width="50"> Facebook</li>

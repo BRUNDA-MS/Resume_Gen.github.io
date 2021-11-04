@@ -16,14 +16,17 @@
     .container {text-align: left;}
     .form-group{text-align: center;}
     .submit{text-align: center;}
-    .topnav {
-    
+ 
+
+.topnav {
+               
     background-color: #230c33;
     position: fixed;
     top: 0;
     width: 100%;
     
 }
+
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -33,9 +36,14 @@
     font-size: 20px;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover {
     background-color: #73648A;
     color: black;
+}
+
+.topnav a.active {
+    background-color: #b27c66;
+    color: #453750;
 }
             body{
               background-size: cover;
@@ -44,3 +52,4 @@
               
               scrollbar-width: thin;
           }
+         

@@ -26,7 +26,7 @@
           ?>
 <html>
 <head>
-  <title>Login</title>
+  <title>GoResume</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -46,7 +46,7 @@
                     <a class="active" href="home1.php" >Home </a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="templates.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Templates
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
@@ -56,10 +56,10 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Aboutus">About Us</a>
+                    <a class="nav-link" href="about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                   <li class="nav-item" style="float: right;">
                     <a class="nav-link" href="Login1.php" >Sign-In</a>
